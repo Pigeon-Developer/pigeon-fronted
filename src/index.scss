@@ -1,0 +1,23 @@
+@import "./src/app/scss/variables";
+@import "./src/app/scss/layout";
+@import "./src/app/scss/spectre";
+@import "./src/app/scss/overwrite";
+
+html {
+  height: 100%;
+}
+
+body {
+  color: $text-base;
+  font-size: .7rem;
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 960px;
+  text-rendering: optimizeLegibility;
+}

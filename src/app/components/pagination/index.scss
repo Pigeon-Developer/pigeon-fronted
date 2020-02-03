@@ -1,0 +1,79 @@
+@import "src/app/scss/variables";
+
+.ms-pagination {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  .ms-pagination-pages {
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        align-items: center;
+        border: 1px solid $border-default;
+        border-radius: .2rem;
+        color: $text-base;
+        cursor: pointer;
+        display: flex;
+        height: 30px;
+        justify-content: center;
+        line-height: 30px;
+        margin: 0 5px;
+        min-width: 30px;
+        padding: 0 3px;
+        text-align: center;
+
+        &.ms-pagination-current,
+        &.ms-pagination-dot {
+          cursor: default;
+        }
+
+        &.ms-pagination-dot {
+          &:hover {
+            background-color: inherit;
+          }
+        }
+
+        &:hover {
+          border: 1px solid $theme-primary;
+        }
+      }
+    }
+    .ms-pagination-current {
+      background: $theme-primary;
+      border: 1px solid $theme-primary;
+      color: white;
+    }
+  }
+  .ms-pagination-go-wrap {
+    display: flex;
+  }
+
+  .ms-pagination-go {
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+
+    input {
+      border-radius: 4px;
+      height: 30px;
+      margin: 0 4px;
+      padding: 0;
+      text-align: center;
+      width: 36px;
+    }
+  }
+  .ms-pagination-btn {
+    height: 1.5rem;
+    line-height: 0;
+    margin-left: 20px;
+  }
+  .ms-pagination-disabled {
+    opacity: .3;
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+}

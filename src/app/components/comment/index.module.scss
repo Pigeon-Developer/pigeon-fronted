@@ -1,0 +1,107 @@
+@import '../../scss/variables';
+
+.name {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0 0 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+
+  :global(.divider) {
+    margin: 0.8rem 0;
+  }
+
+  :global(.image-wrap) {
+    max-height: 200px;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+
+  :global(.image-wrap img) {
+    height: 100% !important;
+    object-fit: cover;
+    width: 100% !important;
+    border-radius: 0.2rem;
+  }
+}
+
+.item {
+  display: flex;
+
+  .left {
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+  }
+
+  .right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+
+    .header-left {
+      span {
+        margin-right: 0.5rem;
+      }
+
+      .nickname {
+        cursor: pointer;
+      }
+
+      .time {
+        color: $text-light;
+        font-size: 0.65rem;
+      }
+    }
+
+    .header-right {
+      display: flex;
+
+      span {
+        margin-left: 0.5rem;
+      }
+
+      p {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+      }
+    }
+
+    .reply {
+      cursor: pointer;
+    }
+  }
+}
+
+.reply-list {
+  background-color: $bg-light;
+  padding: 0 0.5rem 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.1rem;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  margin-top: .5rem;
+
+  p {
+    display: flex;
+    align-items: center;
+    margin-right: .5rem;
+    color: $text-light;
+    cursor: pointer;
+
+    span {
+      margin-left: .2rem;
+    }
+  }
+}

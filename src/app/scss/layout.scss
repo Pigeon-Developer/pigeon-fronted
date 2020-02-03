@@ -1,0 +1,58 @@
+@import "./variables";
+
+.paper {
+  background-color: white;
+  border-radius: .1rem;
+  padding: .8rem;
+}
+
+.html {
+  padding: .3rem 0;
+  h3 {
+    border-left: 5px solid $theme-second;
+    font-size: .9rem;
+    margin: .5rem 0;
+    padding-left: .4rem;
+  }
+
+  h4 {
+    font-size: .8rem;
+    margin: .5rem 0;
+  }
+
+  p {
+    font-size: .75rem;
+    line-height: 1.3rem;
+  }
+
+  img {
+    border-radius: .1rem;
+    height: auto;
+    max-width: 40%;
+  }
+}
+
+// 生成内边距、外边距工具类
+$directionList: ("", "-top", "-right", "-bottom", "-left");
+$sizeMap: (
+  no: 0,
+  xs: 8px,
+  sm: 16px,
+  md: 24px,
+  lg: 40px,
+);
+@each $direction in $directionList {
+  @each $header, $size in $sizeMap {
+    .padding#{$direction}-#{$header} {
+      padding#{$direction}: $size !important;
+    }
+  }
+}
+
+@each $direction in $directionList {
+  @each $header, $size in $sizeMap {
+    .margin#{$direction}-#{$header} {
+      margin#{$direction}: $size !important;
+    }
+  }
+}

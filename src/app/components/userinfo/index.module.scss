@@ -1,0 +1,71 @@
+@import 'src/app/scss/variables';
+
+.container {
+  border-bottom: 0.15rem;
+  border-radius: 0.1rem;
+  .bg {
+    border-radius: 0.15rem 0.15rem 0 0;
+    display: block;
+    height: 145px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      border-top-left-radius: 0.1rem;
+      border-top-right-radius: 0.1rem;
+    }
+  }
+
+  .info {
+    display: flex;
+    position: relative;
+    padding: 0 0.7rem;
+
+    .avatar {
+      position: absolute;
+      top: -0.8rem;
+
+      img {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      padding-left: 3.5rem;
+
+      .header {
+        display: flex;
+        align-items: center;
+      }
+
+      .name {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    padding: 0.4rem 0.7rem 0;
+  }
+
+  .item {
+    display: flex;
+    width: calc((100% - 3px) / 4);
+    text-align: center;
+    flex-direction: column;
+    border-right: 1px solid $border-default;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  .value {
+    font-size: 0.8rem;
+  }
+}

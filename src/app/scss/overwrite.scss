@@ -1,0 +1,82 @@
+@import 'variables';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.btn,
+.form-input {
+  font-size: 0.7rem;
+  height: 1.6rem;
+  line-height: 1rem;
+}
+
+.btn {
+  border-color: $border-default;
+  color: $text-base;
+  padding: 0.25rem 0.6rem;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a, a:visited, a:hover {
+  color: $text-base;
+}
+
+a:focus,
+.btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.bf-container {
+  border: 1px solid $border-default;
+  border-radius: 0.2rem;
+}
+
+.bf-container .public-DraftEditor-content {
+  font-size: 0.7rem;
+}
+
+.bf-controlbar {
+  align-items: center;
+  border-bottom: 1px solid $border-default;
+  box-shadow: none;
+  display: flex;
+
+  .component-wrapper:last-child {
+    position: absolute;
+    right: 0.4rem;
+  }
+}
+
+.component-wrapper button {
+  padding: 0.25rem 0.6rem;
+}
+
+.comment-img {
+  display: block;
+  max-height: 100px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.public-DraftEditorPlaceholder-inner {
+  font-size: 0.7rem;
+}
+
+.col-4 {
+  width: 31.5%;
+}
+
+.col-8 {
+  width: 68.5%;
+}

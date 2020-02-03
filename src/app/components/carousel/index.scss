@@ -1,0 +1,84 @@
+.contain {
+  color: #fff;
+  cursor: pointer;
+  height: 300px;
+  position: relative;
+  transition: all .8s;
+  width: 100%;
+}
+
+.contain .ul {
+  height: 100%;
+  list-style: none;
+  margin: 0 !important;
+  padding: 0;
+  width: 100%;
+}
+
+.contain .ul .items {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.ul li.show {
+  display: block;
+  margin-top: 0;
+}
+
+.ul li {
+  display: none;
+  height: 100%;
+}
+
+.ul li img {
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+}
+
+.contain .dots {
+  bottom: 10px;
+  height: 10px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+.dots li {
+  background-color: white;
+  border-radius: 50%;
+  float: left;
+  height: 10px;
+  list-style: none;
+  margin: 0 5px;
+  transition: all .3s;
+  width: 10px;
+}
+.dots li.active {
+  background-color: rgb(33, 150, 243);
+}
+.control .left {
+  cursor: pointer;
+  font-size: 35px;
+  left: 10px;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.control .left:hover {
+  background-color: rgba($color: #000, $alpha: .3);
+}
+.control .right {
+  cursor: pointer;
+  font-size: 35px;
+  padding: 5px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.control .right:hover {
+  background-color: rgba(0, 0, 0, .3);
+}

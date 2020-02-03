@@ -1,0 +1,15 @@
+.container {
+  overflow: hidden;
+  background: white;
+
+  .bottom {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: .4rem;
+
+    span {
+      font-size: .65rem;
+    }
+  }
+}

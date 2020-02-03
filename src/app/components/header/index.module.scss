@@ -1,0 +1,64 @@
+@import "src/app/scss/variables";
+$header-height: 64px;
+$header-bg: white;
+
+.container {
+  background: white;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
+  height: $header-height;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+
+  .header {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: $max-width;
+    padding: 0 8px;
+  }
+}
+
+.left {
+  align-items: center;
+  display: flex;
+
+  .logo {
+    font-size: 24px;
+    margin-right: 20px;
+  }
+
+  .menu {
+    align-items: center;
+    display: flex;
+
+    .item {
+      align-items: center;
+      color: $text-base;
+      display: flex;
+      font-size: 15px;
+      margin-right: 25px;
+      text-decoration: none;
+
+      span {
+        margin-left: 5px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .active {
+      color: $theme-primary;
+    }
+  }
+}
+
+.right {
+  .avatar {
+    cursor: pointer;
+  }
+}

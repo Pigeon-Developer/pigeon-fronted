@@ -1,0 +1,37 @@
+.hot {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    border-radius: 4px;
+    height: calc((100% - 16px) / 2);
+    overflow: hidden;
+    position: relative;
+
+    &:first-child {
+      margin-bottom: .8rem;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .text {
+      background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.1) 20%,
+        rgba(0, 0, 0, 0.2) 35%,
+        rgba(0, 0, 0, 0.6) 65%,
+        rgba(0, 0, 0, 0.9)
+      );
+      bottom: 0;
+      color: #fff;
+      left: 0;
+      padding: 2px 4px;
+      position: absolute;
+      width: 100%;
+      z-index: 2;
+    }
+  }
+}

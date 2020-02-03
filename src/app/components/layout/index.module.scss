@@ -1,0 +1,14 @@
+@import "src/app/scss/variables";
+
+.layout {
+  background: $layout-bg;
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: 86px 0 20px;
+  flex: 1;
+}

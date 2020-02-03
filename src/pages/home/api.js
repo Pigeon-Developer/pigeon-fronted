@@ -1,0 +1,1 @@
+import request from 'src/app/util/request'
