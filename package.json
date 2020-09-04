@@ -9,7 +9,7 @@
     "braft-utils": "^3.0.12",
     "dplayer": "^1.25.0",
     "moment": "^2.24.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "omit.js": "^1.0.2",
     "ramda": "^0.26.1",
     "react": "^16.12.0",
